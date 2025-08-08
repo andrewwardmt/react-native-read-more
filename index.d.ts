@@ -8,7 +8,7 @@ export interface ReadMoreProps extends TextProps {
     seeMoreText?: string;
     seeLessText?: string;
     animate?: boolean;
-    customTextComponent?: React.ReactNode;
+    customTextComponent?: React.FC<TextProps>;
     ellipsis?: string;
     onExpand?: () => void;
     onCollapse?: () => void;
